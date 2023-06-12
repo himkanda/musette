@@ -1,0 +1,205 @@
+html, 
+body {
+	padding: 0;
+	margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* section#non-parallax{
+    position: relative;
+    top: -20em;
+    background: white;
+}*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #181818; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+#background {
+	background-color: #000;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#loginContainer * {
+	color: #fff;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-weight: normal;
+	line-height: 1em;
+    box-sizing: border-box;
+    
+}
+
+#loginContainer {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+    max-width: 1024px;
+    top: -70px;
+}
+#logo{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+#inputContainer {
+    width: 400px;
+    padding: 0 45px;
+    float: left;
+    border-right: 1px dashed #0072d3;
+    margin-top: 50px;
+}
+
+#inputContainer h2 {
+    text-align: center;
+    text-shadow: -1px 0 #0072d3, 0 1px #0072d3, 1px 0 #0072d3, 0 -1px #0072d3;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+	display: block;
+    border: 0;
+    border-bottom:2px double #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#inputContainer ::placeholder{
+    color: #999;
+}
+
+#inputContainer label {
+	
+    font-size: 13px;
+    margin-top: 15px;
+    display: block;
+    font-size: medium;
+    font-weight: 700;
+    color: #0072d3;
+
+}
+
+#inputContainer button {
+	background-color: #0072D3;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+}
+
+#inputContainer button:hover {
+	cursor: pointer;
+}
+
+.hasAccountText span {
+	font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hasAccountText {
+	text-align: center;
+}
+
+#registerForm,
+#loginForm {
+	display: none;
+}
+
+#loginText {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1 {
+    color: #0072D3;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px white, 1px 0 black, 0 -1px black;
+}
+
+#loginText h2 {
+    margin: 35px 0;
+}
+
+#loginText ul {
+    padding: 0;
+}
+
+#loginText li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 5px 30px;
+    background: url(../images/icons/checkmark.png) no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+    color: #ff0000;
+    font-size: 13px;
+    display: block;
+}
+[role="link"]:hover {
+    cursor: pointer;
+    color: #0072d3 !important;
+}

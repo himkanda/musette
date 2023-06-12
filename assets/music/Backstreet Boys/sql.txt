@@ -1,0 +1,5 @@
+﻿
+INSERT INTO music_stats (list_date, tot_tracks, tot_length, tot_size) VALUES ("06-Mar-19", "1", "00:03:44", "3.65 MB");
+
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Show 'Em (What You're Made Of)", "Backstreet Boys", "In a World Like This", "03:44", "1", "C:\xampp\htdocs\Musette\assets\music\Backstreet Boys\Show 'Em (What You're Made Of).mp3");
+

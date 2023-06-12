@@ -1,0 +1,13 @@
+﻿
+
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Tsunami DVBBS & amp Borgeous ", "10", "14", "04:04", "1", "assets/music/Asphalt/DVBBS & amp Borgeous - Tsunami.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Pyramids DVBBS & Dropgun ", "10", "14", "03:20", "1", "assets/music/Asphalt/DVBBS & Dropgun - Pyramids.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Pulse Electronic music", "10", "14", "05:48", "1", "assets/music/Asphalt/Electronic Music - Pulse.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Epic and Dramatic Trailer Music", "10", "14", "02:41", "1", "assets/music/Asphalt/Epic and Dramatic Trailer Music.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Exclusion - Spacepark", "10", "14", "03:48", "1", "assets/music/Asphalt/Exclusion - Spacepark.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Far Away", "10", "14", "01:46", "1", "assets/music/Asphalt/Far Away.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("GTA San Andreas Theme Song ", "10", "14", "06:10", "1", "assets/music/Asphalt/GTA San Andreas Theme Song Full ! !.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Alternate - Vibe tracks", "10", "14", "02:53", "1", "assets/music/Asphalt/Alternate - Vibe tracks.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Blank - Disfigure", "10", "14", "03:29", "1", "assets/music/Asphalt/Disfigure - Blank.mp3");
+INSERT INTO songs (title, artist, album, duration, albumOrder, path) VALUES ("Entropy - Distrion & Alex Skrindo ", "10", "14", "03:17", "1", "assets/music/Asphalt/Distrion & Alex Skrindo - Entropy.mp3");
+

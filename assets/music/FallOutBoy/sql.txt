@@ -1,0 +1,12 @@
+﻿
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Stay Frosty Royal Milk Tea", "9", "12", "02:51", "11", "01", "assets/music/FallOutBoy/01. Stay Frosty Royal Milk Tea.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("The Last Of The Real Ones", "9", "12", "03:51", "11", "02", "assets/music/FallOutBoy/02. The Last Of The Real Ones.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Hold Me Tight Or Don't", "9", "12", "03:31", "11", "03", "assets/music/FallOutBoy/03. Hold Me Tight Or Don't.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Wilson (Expensive Mistakes)", "9", "12", "03:37", "11", "04", "assets/music/FallOutBoy/04. Wilson (Expensive Mistakes).mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Church", "9", "12", "03:32", "11", "05", "assets/music/FallOutBoy/05. Church.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Heaven's Gate", "9", "12", "03:46", "11", "06", "assets/music/FallOutBoy/06. Heaven's Gate.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Champion", "9", "12", "03:13", "11", "07", "assets/music/FallOutBoy/07. Champion.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Sunshine Riptide (feat. Burna Boy)", "9", "12", "03:25", "11", "08", "assets/music/FallOutBoy/08. Sunshine Riptide (feat. Burna Boy).mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Young And Menace", "9", "12", "03:44", "11", "09", "assets/music/FallOutBoy/09. Young And Menace.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Bishops Knife Trick", "9", "12", "04:23", "11", "10", "assets/music/FallOutBoy/10. Bishops Knife Trick.mp3");
+

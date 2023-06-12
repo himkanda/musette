@@ -1,0 +1,16 @@
+﻿
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Back To December", "8", "11", "04:53", "10", "3", "assets/music/Taylor/103-taylor_swift-back_to_december.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Speak Now", "8", "11", "04:01", "10", "4", "assets/music/Taylor/104-taylor_swift-speak_now.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Dear John", "8", "11", "06:44", "10", "5", "assets/music/Taylor/105-taylor_swift-dear_john.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Mean", "8", "11", "03:58", "10", "6", "assets/music/Taylor/106-taylor_swift-mean.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("The Story Of Us", "8", "11", "04:26", "10", "7", "assets/music/Taylor/107-taylor_swift-the_story_of_us.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Never Grow Up", "8", "11", "04:51", "10", "8", "assets/music/Taylor/108-taylor_swift-never_grow_up.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Enchanted", "8", "11", "05:52", "10", "9", "assets/music/Taylor/109-taylor_swift-enchanted.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Better Than Revenge", "8", "11", "03:37", "10", "10", "assets/music/Taylor/110-taylor_swift-better_than_revenge.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Innocent", "8", "11", "05:02", "10", "11", "assets/music/Taylor/111-taylor_swift-innocent.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Haunted", "8", "11", "04:02", "10", "12", "assets/music/Taylor/112-taylor_swift-haunted.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Last Kiss", "8", "11", "06:07", "10", "13", "assets/music/Taylor/113-taylor_swift-last_kiss.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Long Live", "8", "11", "05:18", "10", "14", "assets/music/Taylor/114-taylor_swift-long_live.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Mine", "8", "11", "03:51", "10", "1", "assets/music/Taylor/101-taylor_swift-mine.mp3");
+INSERT INTO songs (title, artist, album, duration, genre, albumOrder, path) VALUES ("Sparks Fly", "8", "11", "04:21", "10", "2", "assets/music/Taylor/102-taylor_swift-sparks_fly.mp3");
+
