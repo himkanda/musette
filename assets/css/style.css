@@ -1,6 +1,7 @@
-html, body {
-	padding: 0;
-	margin: 0;
+html,
+body {
+    padding: 0;
+    margin: 0;
     height: 100%;
 }
 
@@ -9,7 +10,7 @@ html, body {
 }
 
 * {
-	color: #fff;
+    color: #fff;
     letter-spacing: 0.5px;
 }
 
@@ -20,18 +21,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p{
+p {
     font-weight: 400;
     color: white;
 }
-ul li{
+
+ul li {
     transition: padding 200ms ease-in;
-  
+
 }
 
 
 #nowPlayingBarContainer {
-	width: 100%;
+    width: 100%;
     background-color: #000000;
     bottom: 0;
     position: fixed;
@@ -40,7 +42,7 @@ ul li{
 }
 
 #nowPlayingBar {
-	display: flex;
+    display: flex;
     height: 90px;
     padding: 16px;
     box-sizing: border-box;
@@ -48,21 +50,21 @@ ul li{
 
 #nowPlayingLeft,
 #nowPlayingRight {
-	width: 30%;
+    width: 30%;
     min-width: 180px;
 }
 
-#nowPlayingLeft{
+#nowPlayingLeft {
     position: relative;
 }
 
 #nowPlayingRight {
-	position: relative;
+    position: relative;
     margin-top: 16px;
 }
 
 #nowPlayingCenter {
-	width: 40%;
+    width: 40%;
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -70,38 +72,38 @@ ul li{
 }
 
 #nowPlayingBar .content {
-	width: 100%;
-	height: 57px;
+    width: 100%;
+    height: 57px;
 }
 
 .playerControls .buttons {
-	margin: 0 auto;
+    margin: 0 auto;
     display: table;
 }
 
 .controlButton {
-	background-color: transparent;
+    background-color: transparent;
     border: none;
     vertical-align: middle;
 }
 
 .controlButton img {
-	width: 20px;
+    width: 20px;
     height: 20px;
 }
 
 .controlButton.play img,
 .controlButton.pause img {
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .controlButton:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .progressTime {
-	color: #a0a0a0;
+    color: #a0a0a0;
     font-size: 11px;
     min-width: 40px;
     text-align: center;
@@ -109,25 +111,25 @@ ul li{
 }
 
 .playbackBar {
-	display: flex;
+    display: flex;
 }
 
 .progressBar {
-	width: 100%;
+    width: 100%;
     height: 12px;
     display: inline-flex;
     cursor: pointer;
 }
 
 .progressBarBg {
-	background-color: #b5b5b547;
+    background-color: #b5b5b547;
     height: 4px;
     width: 100%;
     border-radius: 2px;
 }
 
 .progress {
-	background-color: #0078D7;
+    background-color: #0078D7;
     height: 4px;
     width: 0;
     border-radius: 2px;
@@ -137,51 +139,51 @@ ul li{
 }
 
 .playbackBar .progressBar {
-	margin-top: 3px;
+    margin-top: 3px;
 }
 
 #nowPlayingLeft .albumArtwork {
-	height: 100%;
+    height: 100%;
     max-width: 57px;
     margin-right: 22px;
     float: left;
     background-size: cover;
     transform: scale(1.35);
-    
+
 }
 
 #nowPlayingLeft .trackInfo {
-	display: table;
+    display: table;
 }
 
 #nowPlayingLeft .trackInfo .trackName {
-	margin: 6px 0;
+    margin: 6px 0;
     display: inline-block;
     width: 100%;
 }
 
 #nowPlayingLeft .trackInfo .artistName span {
-	font-size: 12px;
+    font-size: 12px;
     color: #a0a0a0;
 }
 
 .volumeBar {
-	width: 180px;
+    width: 180px;
     position: absolute;
     right: 0;
 }
 
 .volumeBar .progressBar {
-	width: 125px;
+    width: 125px;
 }
 
 #topContainer {
-	min-height: 100%;
-	width: 100%;
+    min-height: 100%;
+    width: 100%;
 }
 
 #navBarContainer {
-	background-color: #000;
+    background-color: #000;
     width: 150px;
     height: calc(100vh - 10px);
     position: fixed;
@@ -192,14 +194,17 @@ ul li{
     z-index: 5;
     transition: 300ms;
 }
-#navBarContainer:hover{
+
+#navBarContainer:hover {
     left: 0 !important;
-    
+
 }
-#navBarContainer:hover #navBarLabel{
+
+#navBarContainer:hover #navBarLabel {
     display: none;
-    
+
 }
+
 .navBar {
     height: 100%;
     padding: 0 5px;
@@ -207,7 +212,8 @@ ul li{
     flex-direction: column;
     -ms-flex-direction: column;
 }
-.logonavBar{
+
+.logonavBar {
     margin: 10px 0 8px 0;
     display: block;
 }
@@ -222,24 +228,26 @@ ul li{
 }
 
 .back,
-.forward{
+.forward {
     margin: 10px 5px;
     height: fit-content;
 }
 
 .back img,
-.forward img{
+.forward img {
     width: 25px;
     visibility: hidden;
-    opacity:0;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
+
 .navBar:hover .back img,
 .navBar:hover .forward img,
-.navBar:hover .navItemSettings{
+.navBar:hover .navItemSettings {
     visibility: visible;
-    opacity:1;
+    opacity: 1;
 }
+
 .navBar .group {
     padding: 10px 0;
 }
@@ -281,13 +289,13 @@ ul li{
     color: #fff !important;
 }
 
-.active{
+.active {
     border-left: 5px solid #0078D7;
-    
-     
+
+
 }
 
-.active2{
+.active2 {
     color: #0078D7;
     font-size: 120%;
 }
@@ -306,20 +314,20 @@ ul li{
     text-align: center;
 }
 
-.artistTopViewContainer{
+.artistTopViewContainer {
     height: 300px;
     display: flex;
-   /* background: url("../images/artistbg.jpg"); */
+    /* background: url("../images/artistbg.jpg"); */
     background-size: cover;
 }
 
-#leftContainer{
-    
+#leftContainer {
+
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 150px;
-    
+
     float: left;
     /* width: 200px; */
     /* height: auto; */
@@ -329,7 +337,7 @@ ul li{
     border: 10px solid transparent;
 }
 
-#rightContainer{
+#rightContainer {
     width: 73%;
     float: right;
     height: inherit;
@@ -337,7 +345,7 @@ ul li{
     font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#artistMainPic{
+#artistMainPic {
     border-radius: 50%;
     padding: 7px;
     width: 100%;
@@ -346,46 +354,60 @@ ul li{
     box-sizing: border-box;
 
 }
-#artistInfo{
+
+#artistInfo {
     padding-top: 15px;
     overflow: auto;
     max-height: 140px;
     font-size: 15px;
 }
 
-#artistName{
+#artistName {
     font-size: 50px;
     font-weight: 900;
 }
 
-.textShadow{
+.textShadow {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    
+
 }
 
-#zoom:hover{
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
+#zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
     transform: scale(1.1);
 }
-.zoomless:hover{
-    -ms-transform: scale(1.06); /* IE 9 */
-    -webkit-transform: scale(1.06); /* Safari 3-8 */
+
+.zoomless:hover {
+    -ms-transform: scale(1.06);
+    /* IE 9 */
+    -webkit-transform: scale(1.06);
+    /* Safari 3-8 */
     transform: scale(1.06);
 }
-.white{
+
+.white {
     color: white;
 }
-.black{
+
+.black {
     color: black !important;
 }
-.zoom:hover{
+
+.zoom:hover {
     cursor: pointer;
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
     transform: scale(1.1);
 }
-.zoom, .zoomless, #zoom{
+
+.zoom,
+.zoomless,
+#zoom {
     transition: 250ms transform;
 }
 
@@ -393,7 +415,7 @@ ul li{
     box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.616);
 }
 
-.divBGblue:hover{
+.divBGblue:hover {
     box-shadow: 0 0 0 4px #0078D7;
     border-radius: 10px;
 }
@@ -406,7 +428,7 @@ ul li{
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
-    
+
 }
 
 .gridViewItem img {
@@ -421,6 +443,7 @@ ul li{
     white-space: nowrap;
     margin-top: 5px;
 }
+
 .gridViewInfo2 {
     font-weight: 300;
     text-align: center;
@@ -429,7 +452,8 @@ ul li{
     white-space: nowrap;
     color: #a0a0a0;
 }
-.gridViewInfo3{
+
+.gridViewInfo3 {
     padding: 4px;
     font-weight: 200;
     text-align: center;
@@ -489,7 +513,7 @@ ul li{
     padding: 10px 5px;
     list-style: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
     border-bottom: 0.5px solid rgba(147, 147, 147, 0.28);
 }
 
@@ -501,7 +525,8 @@ ul li{
 .tracklistRow:hover {
     background-color: #0078d7cf;
 }
-.tracklistRow:hover span{
+
+.tracklistRow:hover span {
     color: #d2d2d2;
 }
 
@@ -515,7 +540,7 @@ ul li{
     width: 20px;
     visibility: hidden;
     position: absolute;
-    
+
 }
 
 .tracklistRow:hover .trackCount img,
@@ -533,23 +558,26 @@ ul li{
     visibility: hidden;
 }
 
-.trackPopularity .popularity{
+.trackPopularity .popularity {
     visibility: hidden;
     position: absolute;
 }
-.tracklistRow:hover .popularity{
+
+.tracklistRow:hover .popularity {
     visibility: visible;
 }
-.tracklistRow:hover .trackPopularity{
+
+.tracklistRow:hover .trackPopularity {
     background: transparent;
 }
 
 .trackPopularity .unhighlighted-popularitybar,
-.trackPopularity .highlighted-popularitybar{
+.trackPopularity .highlighted-popularitybar {
     visibility: visible;
 }
+
 .tracklistRow:hover .highlighted-popularitybar,
-.tracklistRow:hover .unhighlighted-popularitybar{
+.tracklistRow:hover .unhighlighted-popularitybar {
     visibility: hidden;
 }
 
@@ -569,7 +597,8 @@ ul li{
     text-align: right;
     height: 17.33px;
 }
-#showMessage{
+
+#showMessage {
     padding: 10px 20px;
     font-size: 17px;
     height: auto;
@@ -592,10 +621,12 @@ ul li{
     margin: 0 5px;
     cursor: pointer;
 }
-span.genreName{
+
+span.genreName {
     float: left;
 }
-span.yearName{
+
+span.yearName {
     float: left;
 }
 
@@ -609,11 +640,11 @@ span.yearName{
     text-align: right;
 }
 
-.trackPopularity{
+.trackPopularity {
     height: 12px;
-    margin: 0 25px 0 15px ;
+    margin: 0 25px 0 15px;
     width: 10%;
-    float:left;
+    float: left;
     display: flex;
     align-items: center;
 }
@@ -627,14 +658,17 @@ span.yearName{
 .artistInfo {
     text-align: center;
 }
+
 .tracklistRow .trackInfo img {
     width: 20px;
     visibility: hidden;
     cursor: pointer;
 }
-.removeNP{
+
+.removeNP {
     margin: 0 0 0 30px;
 }
+
 .button {
     color: #fff;
     cursor: pointer;
@@ -647,7 +681,7 @@ span.yearName{
     padding: 15px;
     min-width: 100px;
     box-shadow: 0 5px 15px -5px #00000070;
-    
+
 }
 
 .button.blue {
@@ -665,11 +699,14 @@ span.yearName{
 .artistsContainer h2 {
     text-align: center;
 }
- .gridViewContainer, .artistsContainer{
+
+.gridViewContainer,
+.artistsContainer {
     padding: 20px;
     margin: 0;
 }
-.tracklist{
+
+.tracklist {
     border-top: 0.5px solid rgba(147, 147, 147, 0.28);
     padding-bottom: 20px;
     margin: 20px 20px 0 20px;
@@ -740,36 +777,39 @@ input:focus {
 
 .playlistImage {
     padding: 6px;
-      
+
 }
-.playlistImageBlack{
+
+.playlistImageBlack {
     box-shadow:
-    /* The top layer shadow */
-    0 -1px 1px rgba(0, 0, 0, 0.76),
-    /* The second layer */
-    0 -10px 0 -5px #3c3c3c,
-    /* The second layer shadow */
-    0 -10px 1px -4px rgba(0, 0, 0, 0.76),
-    /* The third layer */
-    0 -20px 0 -10px #3c3c3c,
-    /* The third layer shadow */
-    0 -20px 1px -9px rgba(0, 0, 0, 0.76);
+        /* The top layer shadow */
+        0 -1px 1px rgba(0, 0, 0, 0.76),
+        /* The second layer */
+        0 -10px 0 -5px #3c3c3c,
+        /* The second layer shadow */
+        0 -10px 1px -4px rgba(0, 0, 0, 0.76),
+        /* The third layer */
+        0 -20px 0 -10px #3c3c3c,
+        /* The third layer shadow */
+        0 -20px 1px -9px rgba(0, 0, 0, 0.76);
     background: #3c3c3c;
 }
-.playlistImageWhite{
+
+.playlistImageWhite {
     box-shadow:
-    /* The top layer shadow */
-    0 -1px 1px rgba(0,0,0,0.15),
-    /* The second layer */
-    0 -10px 0 -5px #eee,
-    /* The second layer shadow */
-    0 -10px 1px -4px rgba(0,0,0,0.15),
-    /* The third layer */
-    0 -20px 0 -10px #eee,
-    /* The third layer shadow */
-    0 -20px 1px -9px rgba(0,0,0,0.15);
+        /* The top layer shadow */
+        0 -1px 1px rgba(0, 0, 0, 0.15),
+        /* The second layer */
+        0 -10px 0 -5px #eee,
+        /* The second layer shadow */
+        0 -10px 1px -4px rgba(0, 0, 0, 0.15),
+        /* The third layer */
+        0 -20px 0 -10px #eee,
+        /* The third layer shadow */
+        0 -20px 1px -9px rgba(0, 0, 0, 0.15);
     background: #eee;
 }
+
 .optionsMenu {
     position: fixed;
     background-color: black;
@@ -791,17 +831,19 @@ input:focus {
     display: flex;
     align-items: center;
 }
-.optionsMenu .item:hover{
+
+.optionsMenu .item:hover {
     cursor: pointer;
     color: #0078D7 !important;
-} 
+}
 
 .optionsMenu .item:hover {
     color: #fff;
     background-color: #333;
     border-color: #333;
 }
-.optionsMenu div img{
+
+.optionsMenu div img {
     padding-right: 10px;
 }
 
@@ -847,38 +889,43 @@ input:focus {
 }
 
 .InYourMusic {
-   
+
     display: flex;
     padding: 15px;
     align-items: center;
     font-size: 20px;
 }
+
 .SwitchView {
     float: right;
     width: 15%;
 }
+
 .headerButtons {
     width: 70%;
     margin: 0;
 }
 
-#albumMainPic{
-    
+#albumMainPic {
+
     width: 100%;
     height: auto;
     padding: 7px;
     box-shadow: 0 0 10px 0 #000;
 
 }
-.by{
+
+.by {
     font-size: 20px;
     width: fit-content;
     display: table;
 }
-.by span text{
+
+.by span text {
     color: #0078D7;
 }
-#blurWrapper{
+
+#blurWrapper {
     filter: blur(15px);
     background-size: cover;
     background-position: center;
@@ -888,80 +935,85 @@ input:focus {
     position: absolute;
     z-index: -1;
 }
-.albumTopViewContainer{
+
+.albumTopViewContainer {
     position: relative;
     overflow: hidden;
     height: 300px;
     display: flex;
     /* background: url(../images/artistbg.jpg); */
-    
+
 }
 
-.albumsPlayAllButton{
+.albumsPlayAllButton {
     margin-top: 10%;
 }
-.artistsPlayAllButton{
+
+.artistsPlayAllButton {
     margin: 0;
 }
 
-.bottomNavBar{
+.bottomNavBar {
     bottom: 0;
     padding: 10px 0;
 
 }
 
-.bottomNavBar .navItem{
+.bottomNavBar .navItem {
     bottom: 90px;
     position: fixed;
 }
+
 .fullScreen,
-.logout{
+.logout {
     padding: 7px;
     width: 20px;
     height: auto;
     cursor: pointer;
 }
 
-.popularityBar{
+.popularityBar {
     background: #0078D7;
     height: 10px;
     border-radius: 4px 0 0 4px;
-    
+
 }
 
-.trackPopularityWithoutBG{
+.trackPopularityWithoutBG {
     margin: 0 25px;
     width: 15%;
-    float:left;
+    float: left;
     display: flex;
 }
 
-.allsview{
-    padding: 15px; 
+.allsview {
+    padding: 15px;
     word-spacing: 5px;
     margin-top: 10px;
     border-bottom: 1px solid;
 }
-.volumeText{
+
+.volumeText {
     font-size: 10px;
     margin-left: 6px;
     color: #a0a0a0;
     /* margin-top: 4px; */
-    
+
 }
 
-.hNavBar{
+.hNavBar {
     background: #181818;
     list-style: none;
     list-style-type: none;
-    margin:0 20px 20px 20px;
+    margin: 0 20px 20px 20px;
     padding: 0;
     overflow: hidden;
     border-bottom: 1px solid #696969;
     z-index: 3;
     display: flex;
 }
-.hNavBar li{
+
+.hNavBar li {
     flex: 1 1 0;
     height: 50px;
     min-width: 90px;
@@ -974,7 +1026,7 @@ input:focus {
     margin: 0 10%;
 }
 
-.hNavBar li span{
+.hNavBar li span {
     display: block;
     color: #a0a0a0;
     text-align: center;
@@ -982,11 +1034,13 @@ input:focus {
     text-decoration: none;
     transition: 250ms;
 }
+
 .hNavBar li:hover {
     box-shadow: 0 0 5px #0078D7;
     cursor: pointer;
 }
-.hNavActive{
+
+.hNavActive {
     height: 48px !important;
     border-top: none;
     border-left: none;
@@ -994,13 +1048,14 @@ input:focus {
     border-bottom: 3px solid #0078D7;
     transition: 250ms;
 }
-.hNavInactive{
+
+.hNavInactive {
     color: #a0a0a0;
     transition: 250ms;
 }
 
 
-.hNavActive span{
+.hNavActive span {
     letter-spacing: 1px;
     transition: 250ms;
     color: #0078D7 !important;
@@ -1008,7 +1063,7 @@ input:focus {
 
 
 
-.allArtistContainer{
+.allArtistContainer {
     display: block;
 }
 
@@ -1025,20 +1080,23 @@ input:focus {
 .allArtistGridViewItem img:not(.playIconShortcut):not(.addIconShortcut) {
     width: 100%;
 }
+
 .allArtistGridViewItem:hover img.playIconShortcut,
 .allArtistGridViewItem:hover img.addIconShortcut,
 .gridViewItem:hover img.playIconShortcut,
-.gridViewItem:hover img.addIconShortcut{
+.gridViewItem:hover img.addIconShortcut {
     opacity: 1;
 }
 
-.allArtistGridViewInfo{
+.allArtistGridViewInfo {
     width: 100%;
     padding: 10px 0 0 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.allArtistGridViewInfo2, .allArtistGridViewInfo3{
+
+.allArtistGridViewInfo2,
+.allArtistGridViewInfo3 {
     color: #a0a0a0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1047,7 +1105,7 @@ input:focus {
     display: inline-flex;
 }
 
-.trackInfoMore{
+.trackInfoMore {
     width: 19%;
 }
 
@@ -1066,32 +1124,32 @@ input:focus {
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
-    
+
 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #181818; 
+    background: #181818;
     border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
-.bgLighter{
-    background:  rgb(41, 41, 41);
+.bgLighter {
+    background: rgb(41, 41, 41);
 }
 
-.mainContentTop{
+.mainContentTop {
     align-items: center;
     display: flex;
     font-weight: 400;
@@ -1099,31 +1157,36 @@ input:focus {
     letter-spacing: 2px;
     font-family: Segoe UI light;
     padding: 22px;
-    
+
 }
+
 .tracklistRow.active .trackCount img.play,
-.tracklistRow.active .trackCount img.removeNP{
+.tracklistRow.active .trackCount img.removeNP {
     visibility: hidden;
 }
 
-.nowplayingicon img{
+.nowplayingicon img {
     cursor: auto;
 }
-li.tracklistRow.active:hover  *{
+
+li.tracklistRow.active:hover * {
     color: #fff !important;
-    
+
 }
-li.tracklistRow.active *{
+
+li.tracklistRow.active * {
     color: #0078D7 !important;
 }
-.highlighted-popularitybar{
+
+.highlighted-popularitybar {
     width: 2px;
     height: 100%;
     margin-right: 2px;
     float: left;
     background-color: #0078D7;
 }
-.unhighlighted-popularitybar{
+
+.unhighlighted-popularitybar {
     width: 2px;
     height: 12px;
     margin-right: 2px;
@@ -1131,76 +1194,87 @@ li.tracklistRow.active *{
     background-color: #65656594;
 }
 
-.optionsMenu img{
+.optionsMenu img {
     width: 20px;
     display: flex;
 }
-.optionsMenu .item{
+
+.optionsMenu .item {
     border-top: 0.5px solid #808080a6;
 }
 
-.yourMusicOptions{
+.yourMusicOptions {
     padding: 0 20px;
     margin: 10px 0 30px 0;
     display: flex;
     align-items: start;
 }
-.yourMusicOptions span{
+
+.yourMusicOptions span {
     display: flex;
-    margin-right: 30px; 
+    margin-right: 30px;
 }
-.yourMusicOptions span img{
+
+.yourMusicOptions span img {
     padding: 0 10px 0 0;
 }
+
 .sticky {
     width: calc(100% - 190px);
     position: fixed;
     top: 0;
     margin: 0 20px 20px 20px;
-    
+
 }
-.sticky + .yourMusicContainer {
+
+.sticky+.yourMusicContainer {
     padding-top: 60px;
 }
 
-.trackInLibrary{
+.trackInLibrary {
     float: right;
     text-align: right;
     width: 10%;
 }
-.trackInLibrary img:hover{
+
+.trackInLibrary img:hover {
     background: white;
 }
 
 
-.noSongs{
+.noSongs {
     padding: 20px;
 }
-.noSongs h1{
+
+.noSongs h1 {
     margin: 0;
     padding-bottom: 20px;
     font-weight: 400;
 }
-.noSongWrap{
+
+.noSongWrap {
     display: flex;
 }
-.noSongWrap ul{
+
+.noSongWrap ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.noSongWrap1{
+
+.noSongWrap1 {
     font-size: 18px;
     margin-top: 3px;
     color: #a0a0a0;
 }
-.noSongWrap2{
+
+.noSongWrap2 {
     color: #a0a0a0;
 }
 
 select#songSelect,
 select#albumSelect,
-select#artistSelect{
+select#artistSelect {
     -webkit-appearance: button;
     margin-left: 5px;
     cursor: pointer;
@@ -1211,117 +1285,140 @@ select#artistSelect{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 13px;
 }
+
 select#songSelect:focus,
 select#albumSelect:focus,
-select#artistSelect:focus{
+select#artistSelect:focus {
     outline: none;
 }
+
 select#songSelect option,
 select#albumSelect option,
-select#artistSelect option{
+select#artistSelect option {
     letter-spacing: 1px;
     text-indent: 5px;
 }
 
-option{
+option {
     color: #f3f3f3;
     background: #000;
 }
-.optionBlack{
+
+.optionBlack {
     color: black !important;
     background: #f3f3f3 !important;
 }
 
-#radioZoom, #radioTheme{
+#radioZoom,
+#radioTheme {
     margin: 0 22px;
     display: inline-block;
     margin-bottom: 20px;
     font-size: 15px;
     line-height: 22px;
 }
-#radioZoom input:hover, #radioTheme input:hover{
+
+#radioZoom input:hover,
+#radioTheme input:hover {
     cursor: pointer;
 }
-.middleNavBar > span{
+
+.middleNavBar>span {
     padding-left: 5px;
     text-align: center;
     letter-spacing: 2px;
     font-size: 16px;
     font-weight: 100;
 }
-#overlay{
-    position: fixed; /* Sit on top of the page content */
-    
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0; 
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
 }
-.permLink{
+
+.permLink {
     color: #0078D7;
     cursor: pointer;
-    
+
 }
-#overlay > #loadingText{
+
+#overlay>#loadingText {
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: 50px;
     color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-.permLink2{
+.permLink2 {
     color: #0078D7;
     cursor: pointer;
     font-weight: bold;
     font-size: 16px;
 }
-.permLink:hover{
+
+.permLink:hover {
     color: #a0a0a0;
 }
-.accountSettings{
+
+.accountSettings {
     display: inline-grid;
     padding-left: 22px;
     margin-bottom: 20px;
     line-height: 25px;
     font-size: 15px;
 }
-.settingsLogOutButton{
+
+.settingsLogOutButton {
     position: absolute;
     bottom: 0;
     left: 28%;
     margin-bottom: 15px;
 }
-.navItemSettings{
+
+.navItemSettings {
     display: flex;
     line-height: 25px;
     align-items: center;
     width: 125px;
     background: #181818;
     visibility: hidden;
-    opacity:0;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
+    opacity: 0;
+    transition: visibility 0.3s linear, opacity 0.3s linear;
 }
-#topNavBar{
+
+#topNavBar {
     padding-bottom: 140px;
 }
 
-.navItemSettings.navItem img:hover{
+.navItemSettings.navItem img:hover {
     transform: rotate(90deg);
     transition: transform 500ms;
     cursor: pointer;
 }
-.grey{
+
+.grey {
     color: #a0a0a0;
 }
-.playlist{
+
+.playlist {
     border: none !important;
     align-items: center;
     display: flex;
@@ -1331,32 +1428,39 @@ option{
     margin: 0 1px !important;
 
 }
-.move-up{
+
+.move-up {
     position: absolute;
     right: 60px;
     visibility: hidden;
 }
-.move-down{
+
+.move-down {
     position: absolute;
     right: 30px;
     visibility: hidden;
 }
-.NP-top{
+
+.NP-top {
     display: block;
     padding: 10px;
-    margin:  0;
+    margin: 0;
 }
-.NP-top span:not(.separator){
+
+.NP-top span:not(.separator) {
     padding: 0 10px;
     color: #a0a0a0;
 }
-.separator{
+
+.separator {
     color: white;
 }
-#getTotalTimeNP{
+
+#getTotalTimeNP {
     color: #a0a0a0;
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     position: relative;
     width: 30px;
     height: 13px;
@@ -1365,12 +1469,14 @@ input[type="checkbox"]{
     border-radius: 6px;
     outline: none;
     transition: 200ms;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
-input:checked[type="checkbox"]{
+
+input:checked[type="checkbox"] {
     background: #0078D7;
 }
-input[type="checkbox"]::before{
+
+input[type="checkbox"]::before {
     content: '';
     position: absolute;
     width: 13px;
@@ -1380,24 +1486,28 @@ input[type="checkbox"]::before{
     left: 0;
     background: #fff;
     transform: scale(1.1);
-    box-shadow: 0 0 1px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
     transition: 200ms;
 }
-input:checked[type="checkbox"]::before{
+
+input:checked[type="checkbox"]::before {
     left: 16px;
 }
-.backgroundImageGradient{
+
+.backgroundImageGradient {
     height: 100%;
 }
-.backgroundImageGradientBlack{
-    
-    background-image: radial-gradient( rgba(0, 0, 0, 0.54) 8%, #181818 64%);
+
+.backgroundImageGradientBlack {
+
+    background-image: radial-gradient(rgba(0, 0, 0, 0.54) 8%, #181818 64%);
 }
-.backgroundImageGradientWhite{
+
+.backgroundImageGradientWhite {
     background-image: radial-gradient(rgba(255, 255, 255, 0.54) -18%, #fff 73%);
 }
 
-.backgroundImage{
+.backgroundImage {
     background-size: cover !important;
     height: 100%;
     margin-right: -2rem;
@@ -1410,7 +1520,9 @@ input:checked[type="checkbox"]::before{
     max-width: 100%;
     filter: blur(5px);
 }
-.backgroundImage, .backgroundImageGradient{
+
+.backgroundImage,
+.backgroundImageGradient {
     position: fixed;
     width: calc(100% - 150px);
     z-index: -1;
@@ -1418,7 +1530,7 @@ input:checked[type="checkbox"]::before{
     overflow: hidden;
 }
 
-#showAll{
+#showAll {
     letter-spacing: 1.5px;
     text-align: center;
     color: #a0a0a0;
@@ -1428,7 +1540,8 @@ input:checked[type="checkbox"]::before{
     margin: 0 auto;
     color: #0078D7;
 }
-#copyright{
+
+#copyright {
     font-size: 11px;
     color: #a0a0a0;
     display: table;
@@ -1436,7 +1549,7 @@ input:checked[type="checkbox"]::before{
     padding: 10px;
 }
 
-.sideNavSettings{
+.sideNavSettings {
     display: flex;
     margin-left: 20px;
 }
@@ -1454,9 +1567,9 @@ input:checked[type="checkbox"]::before{
     text-transform: uppercase;
 }
 
-img.playIconShortcut{
+img.playIconShortcut {
     width: 60px;
- 
+
     position: absolute;
     left: 0;
     right: 0;
@@ -1467,11 +1580,12 @@ img.playIconShortcut{
     box-sizing: border-box;
     background: #0078D7;
     border-radius: 50%;
-    
+
 }
-img.addIconShortcut{
+
+img.addIconShortcut {
     width: 60px;
- 
+
     position: absolute;
     right: 0;
     bottom: 0;
@@ -1481,14 +1595,14 @@ img.addIconShortcut{
     box-sizing: border-box;
     background: #0078D7;
     border-radius: 50%;
-    
+
 }
 
-.allArtistGridViewImage{
+.allArtistGridViewImage {
     position: relative;
 }
 
-.headerControls>span{
+.headerControls>span {
     margin-right: 20px;
     border-radius: 20px;
     padding: 5px 15px;
@@ -1497,7 +1611,7 @@ img.addIconShortcut{
     justify-content: center;
     display: inline-flex;
     line-height: 20px;
-    transition: 200ms ;
+    transition: 200ms;
     box-sizing: border-box;
     box-shadow: 0 5px 15px -5px #00000070;
     background: #0078D7;
@@ -1505,16 +1619,18 @@ img.addIconShortcut{
     color: white !important;
 }
 
-.headerControls>span>img{
+.headerControls>span>img {
     width: 16px;
 }
-.headerControls>span:hover{
+
+.headerControls>span:hover {
     transform: scale(1.1);
 }
 
-.InYourMusic>img{
+.InYourMusic>img {
     width: 25px;
 }
-.mainContentInfo{
+
+.mainContentInfo {
     padding: 0 22px;
 }

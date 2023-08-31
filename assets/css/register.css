@@ -1,7 +1,7 @@
-html, 
+html,
 body {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
     height: 100%;
     overflow-x: hidden;
 }
@@ -19,31 +19,31 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
-    
+
 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #181818; 
+    background: #181818;
     border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 
 
 #background {
-	background-color: #000;
+    background-color: #000;
     background-image: url(../images/bg1.jpg);
     background-position: center;
     background-size: cover;
@@ -54,43 +54,53 @@ body {
 }
 
 #loginContainer * {
-	color: #fff;
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-weight: normal;
-	line-height: 1em;
+    color: #fff;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1em;
     box-sizing: border-box;
-    
+
 }
 
 #loginContainer {
-	width: 80%;
-	margin: 0 auto;
-	position: relative;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
     max-width: 1024px;
     top: -70px;
 }
-#logo{
+
+#logo {
     position: relative;
     top: 30px;
     left: 30px;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #fff;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
-   opacity:  1;
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: 1;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
-   opacity:  1;
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: 1;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
 }
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:    #fff;
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
 }
 
 #inputContainer {
@@ -109,9 +119,9 @@ body {
 #inputContainer input[type="text"],
 #inputContainer input[type="email"],
 #inputContainer input[type="password"] {
-	display: block;
+    display: block;
     border: 0;
-    border-bottom:2px double #fff;
+    border-bottom: 2px double #fff;
     height: 27px;
     line-height: 27px;
     width: 100%;
@@ -120,12 +130,12 @@ body {
     padding: 5px;
 }
 
-#inputContainer ::placeholder{
+#inputContainer ::placeholder {
     color: #999;
 }
 
 #inputContainer label {
-	
+
     font-size: 13px;
     margin-top: 15px;
     display: block;
@@ -136,7 +146,7 @@ body {
 }
 
 #inputContainer button {
-	background-color: #0072D3;
+    background-color: #0072D3;
     border: 2px solid #fff;
     border-radius: 250px;
     color: #fff;
@@ -149,22 +159,22 @@ body {
 }
 
 #inputContainer button:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .hasAccountText span {
-	font-weight: bold;
+    font-weight: bold;
     font-size: 12px;
     cursor: pointer;
 }
 
 .hasAccountText {
-	text-align: center;
+    text-align: center;
 }
 
 #registerForm,
 #loginForm {
-	display: none;
+    display: none;
 }
 
 #loginText {
@@ -199,6 +209,7 @@ body {
     font-size: 13px;
     display: block;
 }
+
 [role="link"]:hover {
     cursor: pointer;
     color: #0072d3 !important;

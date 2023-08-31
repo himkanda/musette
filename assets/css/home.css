@@ -1,51 +1,60 @@
-body, html{
+body,
+html {
     margin: 0;
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-}
-html{scroll-behavior:smooth;}
 
-.zoom:hover{
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.zoom:hover {
     cursor: pointer;
     transition: transform .3s;
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
     transform: scale(1.1);
 }
 
-a{
+a {
     text-decoration: none !important;
     color: #fff;
 }
 
-.middle span{
+.middle span {
     font-size: 4.2rem;
     font-weight: 300;
 }
 
-#middlemiddle img{
+#middlemiddle img {
     display: flex;
     padding: 0px 65px;
 }
-#middlemiddle:hover{
+
+#middlemiddle:hover {
     box-shadow: 0 0 600px #dadce0;
 }
-#middlemiddle{
+
+#middlemiddle {
     padding: 0 20px 30px 20px;
     border-radius: 5px;
     overflow: hidden;
     transition: 400ms;
 }
 
-.end{
+.end {
     position: absolute;
     bottom: 10px;
     text-align: center;
     /* align-items: center; */
     width: 100vw;
 }
-.end a{
+
+.end a {
     display: inline-block;
     width: 55px;
     height: 55px;
@@ -53,16 +62,20 @@ a{
     border-radius: 100px;
     border: 1px solid white;
 }
-.end a:hover{
+
+.end a:hover {
     background: #fff;
 }
-.end a:hover .fa-angle-down{
+
+.end a:hover .fa-angle-down {
     color: #0070d3;
 }
-.end a i{
+
+.end a i {
     margin-top: 12px;
 }
-#parallax-bg .middle{
+
+#parallax-bg .middle {
     top: 55px;
     position: relative;
     display: flex;
@@ -76,13 +89,13 @@ a{
 
 
 
-.middle span a:hover{
+.middle span a:hover {
     color: #0070d3;
     text-shadow: none;
     transition: 500ms;
 }
 
-#scroll-down{
+#scroll-down {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -90,50 +103,59 @@ a{
     color: #181818;
     font-size: 20px;
 }
-#why{
+
+#why {
     display: flex;
     padding: 50px 30px;
-    
+
 }
-#whywhy{
+
+#whywhy {
     padding: 40px 0;
     font-size: 40px;
     display: block;
     text-align: center;
 
 }
-.whys{
+
+.whys {
     width: 25%;
     padding: 0 20px;
     text-align: center;
 }
-.whys span{
+
+.whys span {
     font-size: 25px;
     padding: 5px;
     font-weight: 300;
 }
-#why span{
+
+#why span {
     display: block;
 }
+
 @media only screen and (max-width: 600px) {
-    
-    #why{
+
+    #why {
         display: block;
     }
-    .whys{
+
+    .whys {
         width: 100%;
         padding: 20px;
     }
 }
-#join{
-    background-image:   url("https://www.google.com/chrome/static/images/download-bg-desktop.svg");
+
+#join {
+    background-image: url("https://www.google.com/chrome/static/images/download-bg-desktop.svg");
     padding: 80px 0;
-    background:  center url(https://www.google.com/chrome/static/images/download-bg-mobile.svg) #0070d3;
+    background: center url(https://www.google.com/chrome/static/images/download-bg-mobile.svg) #0070d3;
     text-align: center;
     box-sizing: border-box;
 }
-#join button{
-    background-color: rgba(0,0,0,0);
+
+#join button {
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid #fff;
     color: #fff;
     font-size: 1rem;
@@ -144,13 +166,15 @@ a{
     height: 46px;
     outline: none;
     padding: 0 24px;
-} 
-#join button:hover{
+}
+
+#join button:hover {
     color: #0070d3;
     background-color: #fff;
     transition: 200ms;
 }
-#join h2{
+
+#join h2 {
     color: #fff;
     margin: 0 0 20px;
     font-size: 30px;
@@ -159,19 +183,20 @@ a{
     align-self: center;
     font-weight: normal;
 }
-ul{
+
+ul {
     list-style: none;
     width: 10%;
     display: inline-grid;
 }
 
-#social{
+#social {
     padding: 50px 30px;
     border-bottom: 1px solid #dadce0;
 }
 
 
-section#parallax-bg{
+section#parallax-bg {
     background-image: url(http://promusicmagazine.com/wp-content/uploads/2011/11/crowd-at-concert.jpg);
     background-size: cover;
     background-position: center 0px;
@@ -181,8 +206,8 @@ section#parallax-bg{
     padding: 0;
 }
 
-#parallax-bg1{
-    background-image : url(http://www.wallpaperup.com/uploads/wallpapers/2013/06/11/101123/ddf8498e007de1bd7cced13ecd1f3e76.jpg);
+#parallax-bg1 {
+    background-image: url(http://www.wallpaperup.com/uploads/wallpapers/2013/06/11/101123/ddf8498e007de1bd7cced13ecd1f3e76.jpg);
     background-size: cover;
     background-position: center 0px;
     padding: 0;
@@ -190,6 +215,7 @@ section#parallax-bg{
     height: calc(100vh);
     padding: 0;
 }
+
 /* section#non-parallax{
     position: relative;
     top: -20em;
@@ -199,34 +225,35 @@ section#parallax-bg{
 /* width */
 ::-webkit-scrollbar {
     width: 4px;
-    
+
 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #181818; 
+    background: #181818;
     border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 
 
-.buttons{
+.buttons {
     width: 100%;
     text-align: center;
-  }
-  .btn{
+}
+
+.btn {
     display: inline-block;
     width: 90px;
     height: 90px;
@@ -237,17 +264,20 @@ section#parallax-bg{
     color: #0072D3;
     overflow: hidden;
     position: relative;
-  }
-  .btn i{
+}
+
+.btn i {
     line-height: 90px;
     font-size: 26px;
     transition: 0.2s linear;
-  }
-  .btn:hover i{
+}
+
+.btn:hover i {
     transform: scale(1.3);
     color: #f1f1f1;
-  }
-  .btn::before{
+}
+
+.btn::before {
     content: "";
     position: absolute;
     width: 120%;
@@ -256,27 +286,33 @@ section#parallax-bg{
     transform: rotate(45deg);
     left: -110%;
     top: 90%;
-  }
-  .btn:hover::before{
+}
+
+.btn:hover::before {
     animation: aaa 0.7s 1;
     top: -10%;
     left: -10%;
-  }
-  @keyframes aaa {
-    0%{
-      left: -110%;
-      top: 90%;
-    }50%{
-      left: 10%;
-      top: -30%;
-    }100%{
-      top: -10%;
-      left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
     }
-  }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
 
 
-  #footer-bottom{
+#footer-bottom {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -285,66 +321,33 @@ section#parallax-bg{
     box-sizing: border-box;
     font-size: 30px;
     align-items: baseline;
-  }
-  #footer-bottom span{
+}
+
+#footer-bottom span {
     height: 60px;
     text-align: center;
     font-size: 15px;
     display: inline-block;
     padding: 0 30px 18px 0;
-  }
-  #footer-bottom span:nth-child(1){
-      padding-left: 30px;
-  }
-  #footer-bottom-right{
+}
+
+#footer-bottom span:nth-child(1) {
+    padding-left: 30px;
+}
+
+#footer-bottom-right {
     display: inline-flex;
     float: right;
     right: 0;
     position: absolute;
     margin-top: 15px;
 
-  }
-  #footer-bottom-right span{
-      height: 60px;
-      text-align: right;
-      font-size: 18px;
-      display: inline-block;
-      padding: 0 30px 18px 0;
-  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#footer-bottom-right span {
+    height: 60px;
+    text-align: right;
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 30px 18px 0;
+}
