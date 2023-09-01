@@ -6,7 +6,7 @@ if (isset($_POST['playlistId']) && isset($_POST['id']) && $_POST['type'] == 'son
 	$playlistId = $_POST['playlistId'];
 	$songId = $_POST['id'];
 
-	$orderIdQuery = mysqli_query($con, "SELECT (MAX(playlistOrder) + 1) as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
+	$orderIdQuery = mysqli_query($con, "SELECT COALESCE(MAX(playlistOrder)+1,0) as playlistOrder FROM playlistsongs WHERE playlistId=$playlistId");
 	$row = mysqli_fetch_array($orderIdQuery);
 	$order = $row['playlistOrder'];
 
@@ -16,10 +16,6 @@ if (isset($_POST['playlistId']) && isset($_POST['id']) && $_POST['type'] == 'son
 
 	$duplicatequery = mysqli_query($con, "SELECT id FROM playlistsongs WHERE (playlistId='$playlistId' && songId='$songId')");
 	$duplicaterow = mysqli_fetch_array($duplicatequery);
-
-
-
-
 
 	if ($duplicaterow) {
 		echo "Song already exists in the playlist. Can't add again. ";
@@ -31,7 +27,7 @@ if (isset($_POST['playlistId']) && isset($_POST['id']) && $_POST['type'] == 'son
 
 	$playlistId = $_POST['playlistId'];
 	$albumId = $_POST['id'];
-	$orderIdQuery = mysqli_query($con, "SELECT MAX(playlistOrder) + 1 as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
+	$orderIdQuery = mysqli_query($con, "SELECT COALESCE(MAX(playlistOrder)+1,0) as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
 	$row = mysqli_fetch_array($orderIdQuery);
 	$order = $row['playlistOrder'];
 	$songs = mysqli_query($con, "SELECT * from songs WHERE album='$albumId'");
@@ -54,7 +50,7 @@ if (isset($_POST['playlistId']) && isset($_POST['id']) && $_POST['type'] == 'son
 
 	$playlistId = $_POST['playlistId'];
 	$artistId = $_POST['id'];
-	$orderIdQuery = mysqli_query($con, "SELECT MAX(playlistOrder) + 1 as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
+	$orderIdQuery = mysqli_query($con, "SELECT COALESCE(MAX(playlistOrder)+1,0) as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
 	$row = mysqli_fetch_array($orderIdQuery);
 	$order = $row['playlistOrder'];
 	$songs = mysqli_query($con, "SELECT * from songs WHERE artist='$artistId'");
@@ -77,7 +73,7 @@ if (isset($_POST['playlistId']) && isset($_POST['id']) && $_POST['type'] == 'son
 
 	$playlistId = $_POST['playlistId'];
 	$Id = $_POST['id'];
-	$orderIdQuery = mysqli_query($con, "SELECT MAX(playlistOrder) + 1 as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
+	$orderIdQuery = mysqli_query($con, "SELECT COALESCE(MAX(playlistOrder)+1,0) as playlistOrder FROM playlistsongs WHERE playlistId='$playlistId'");
 	$row = mysqli_fetch_array($orderIdQuery);
 	$order = $row['playlistOrder'];
 	$songs = mysqli_query($con, "SELECT * from playlistsongs WHERE playlistId='$Id'");

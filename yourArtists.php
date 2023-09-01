@@ -123,7 +123,7 @@ while ($row = mysqli_fetch_array($songQueryAll)) {
     </div>
 
     <?php
-    $artistquery = mysqli_query($con2, "SELECT DISTINCT artist FROM $username ORDER BY id DESC");
+    $artistquery = mysqli_query($con2, "SELECT DISTINCT artist, id FROM $username ORDER BY id DESC");
 
     while ($row = mysqli_fetch_array($artistquery)) {
         $artistId = $row['artist'];

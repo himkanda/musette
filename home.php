@@ -21,12 +21,11 @@ $username = $userLoggedIn->getUsername();
 <div class="gridViewContainer">
     <?php
 
-    $query2 = mysqli_query($con2, "SELECT id, typesid, type, username, max(time) time FROM recentlyplayed WHERE username = '$username' GROUP BY typesid, type, username ORDER BY time desc LIMIT 20");
+    $query2 = mysqli_query($con2, "SELECT typesid, type, username, max(time) time FROM recentlyplayed WHERE username = '$username' GROUP BY typesid, type, username ORDER BY time desc LIMIT 20");
 
 
     while ($row = mysqli_fetch_array($query2)) {
         if ($row['type'] == 'artist') {
-
             $artist = new Artist($con, $row['typesid']);
 
             echo "<div class='allArtistGridViewItem divBGblue'>
@@ -35,7 +34,6 @@ $username = $userLoggedIn->getUsername();
                             <img class='playIconShortcut zoom' src='assets/images/icons/playIconShortcut.png' onclick='playIconShortcut(\"artist\", " . $row['typesid'] . ")'>
                             <input type='hidden' class='id' value='" . $row['typesid'] . "' name='artist'>
                             <img class='addIconShortcut zoom optionsButton' src='assets/images/icons/addIconShortcut.png' onclick='showOptionsMenu(this)'>
-
                             <div class='gridViewInfo'>"
                 . $artist->getName() .
                 "</div>
@@ -43,7 +41,6 @@ $username = $userLoggedIn->getUsername();
                         </span>
                     </div>";
         } elseif ($row['type'] == 'album') {
-
             $album = new Album($con, $row['typesid']);
 
             echo "<div class='gridViewItem divBGblue'>
@@ -52,7 +49,6 @@ $username = $userLoggedIn->getUsername();
                             <img class='playIconShortcut zoom' src='assets/images/icons/playIconShortcut.png' onclick='playIconShortcut(\"album\", " . $row['typesid'] . ")'>
                             <input type='hidden' class='id' value='" . $row['typesid'] . "' name='album'>
                             <img class='addIconShortcut zoom optionsButton' src='assets/images/icons/addIconShortcut.png' onclick='showOptionsMenu(this)'>
-
                             <div class='gridViewInfo'>"
                 . $album->getTitle() .
                 "</div>
@@ -60,23 +56,18 @@ $username = $userLoggedIn->getUsername();
                 . $album->getArtist()->getName() .
                 "</div>
                             <div class='gridViewInfo3'> ALBUM </div>
-                            
                         </span>
                     </div>";
         } elseif ($row['type'] == 'playlist') {
-
             $playlistme = new Playlist($con, $row['typesid']);
 
             echo "<div class='gridViewItem divBGblue' >
-
 						<div class='playlistImage allArtistGridViewImage'>
 							<img role='link' src='" . $playlistme->getPic() . "' onclick='openPage(\"playlist.php?id=" . $playlistme->getId() . "\")'>
 							<img class='playIconShortcut zoom' src='assets/images/icons/playIconShortcut.png' onclick='playIconShortcut(\"playlist\", " . $playlistme->getId() . ")'>
 							<input type='hidden' class='id' value='" . $playlistme->getId() . "' name='playlist'>
 							<img class='addIconShortcut zoom optionsButton' src='assets/images/icons/addIconShortcut.png' onclick='showOptionsMenu(this)'>
-
 						</div>
-						
 						<div class='gridViewInfo'>"
                 . $playlistme->getName() .
                 "</div>
@@ -86,11 +77,8 @@ $username = $userLoggedIn->getUsername();
                         <div class='gridViewInfo3'> PLAYLIST </div>
 					</div>";
 
-
-
         }
     }
-
 
     ?>
 </div>
@@ -123,20 +111,14 @@ $username = $userLoggedIn->getUsername();
         while ($row = mysqli_fetch_array($songQuery)) {
             array_push($songIdArray, $row['library']);
             if ($i < 21) {
-
-
-
                 $songId = $row['library'];
                 $song = new Song($con, $songId);
-
-
 
                 echo "<li class='tracklistRow'>
                         <div class='trackCount'>
                             <img class='play' src='assets/images/icons/play-white.png' onclick='setTrack(\"" . $songId . "\", tempPlaylist, true)'>
                             <span class='trackNumber'>$i</span>
                         </div>
-
 
                         <div class='trackInfo'>
                             <span class='trackName'>" . $song->getTitle() . "</span>
@@ -145,7 +127,6 @@ $username = $userLoggedIn->getUsername();
                         </div>
 
                         <div class='trackInfoMore'> <span role='white' class='albumName' onclick='openPage(\"album.php?id=" . $row['album'] . "\")'>" . $song->getAlbum()->getTitle() . " </span></div>
-                        
                         <div class='trackPopularityWithoutBG'>
                             <span class='popularity'>" . $row['plays'] . " spins</span>
                         </div>
@@ -158,7 +139,6 @@ $username = $userLoggedIn->getUsername();
                         <div class='trackDuration'>
                             <span class='duration'>" . $song->getDuration() . "</span>
                         </div>
-
 
                     </li>";
             }
