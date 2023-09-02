@@ -6,7 +6,15 @@ function debug_to_console($data)
     if (is_array($output))
         $output = implode(',', $output);
 
-    echo "
-<script>console.log('Debug Objects: " . $output . "');</script>";
+    echo "<script>console.log('Debug Objects: " . $output . "');</script>";
 }
+
+
+function parseJson($json)
+{
+
+}
+
+
+
 ?>
