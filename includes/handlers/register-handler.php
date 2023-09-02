@@ -35,10 +35,10 @@ if (isset($_POST['registerButton'])) {
 	$wasSuccessful = $account->register($username, $firstName, $lastName, $email, $email2, $password, $password2);
 
 	if ($wasSuccessful == true) {
-		$conn = mysqli_connect("127.0.0.1", "root", "Test1234", "userdata");
+		$conn = mysqli_connect("127.0.0.1", "root", "Test1234", "musette_user_data");
 		if (!$conn)
 			die("<p>Couldn't connect to the server!<p>");
-		$selectData = mysqli_select_db($conn, "userdata");
+		$selectData = mysqli_select_db($conn, "musette_user_data");
 		if (!$selectData) {
 			die("Database Not Selected");
 		}

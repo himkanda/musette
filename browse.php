@@ -147,7 +147,7 @@ $username = $userLoggedIn->getUsername();
 <div class="gridViewContainer">
 
 	<?php
-	$albumQuery = mysqli_query($con, "SELECT * FROM musette.albums AS t1 LEFT JOIN userdata.$username AS t2 ON t1.id = t2.album WHERE t2.album is null ORDER BY RAND() LIMIT 5 ");
+	$albumQuery = mysqli_query($con, "SELECT * FROM musette_app_data.albums AS t1 LEFT JOIN musette_user_data.$username AS t2 ON t1.id = t2.album WHERE t2.album is null ORDER BY RAND() LIMIT 5 ");
 
 	while ($row = mysqli_fetch_array($albumQuery)) {
 

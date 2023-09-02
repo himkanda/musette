@@ -6,12 +6,7 @@ $username = $userLoggedIn->getUsername();
 
 if ($username != 'HimanshuK') {
     exit();
-
-
 }
-
-
-
 
 ?>
 <script>

@@ -10,7 +10,7 @@ if (isset($_POST['playlistId']) && isset($_POST['userLoggedIn'])) {
         $query1 = mysqli_query($con2, "DELETE FROM savedplaylist WHERE playlistId='$playlistId' AND userName='$username'");
         echo "removed";
     } else {
-        $query1 = mysqli_query($con2, "INSERT INTO savedplaylist VALUES ( '', '$username' ,'$playlistId') ");
+        $query1 = mysqli_query($con2, "INSERT INTO savedplaylist VALUES ( NULL, '$username' ,'$playlistId') ");
         echo "added";
     }
 } else {

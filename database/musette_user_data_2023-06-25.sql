@@ -6,7 +6,7 @@
 # https://github.com/Sequel-Ace/Sequel-Ace
 #
 # Host: localhost (MySQL 8.0.33)
-# Database: userdata
+# Database: musette_user_data
 # Generation Time: 2023-06-25 09:23:07 +0000
 # ************************************************************
 

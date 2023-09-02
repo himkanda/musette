@@ -14,15 +14,10 @@ Finally, To open php local dev server without XAMPP:
 $ cd ~/parent_folder_of_musette
 $ php -S localhost:8000 -t musette/
 ```
-or, simplify it by: <br>
-```
-$ cd ~/musette
-$ php -S localhost:8000
-```
 Navigate to `database` directory, and import the sql files in your MySQL workbench <br>
 Change the username/passwords for your database inside `includes/config.php` file. <br>
 <br>
-Open the URL `http://localhost:8000/Musette` and register/login to the website. <br>
+Open the URL `http://localhost:8000/musette` and register/login to the website. <br>
 Done!
 
 
