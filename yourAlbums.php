@@ -132,7 +132,7 @@ while ($row = mysqli_fetch_array($songQueryAll)) {
     </div>
     <?php
 
-    $albumquery = mysqli_query($con2, "SELECT DISTINCT album FROM $username ORDER BY id DESC");
+    $albumquery = mysqli_query($con2, "SELECT DISTINCT album, id FROM $username ORDER BY id DESC");
 
     while ($row = mysqli_fetch_array($albumquery)) {
         $albumId = $row['album'];
