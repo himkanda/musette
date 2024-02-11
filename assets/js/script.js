@@ -711,7 +711,7 @@ function getTotalTimeNP() {
 	});
 
 	var timesplit = itemss0.split(":");
-	if (timesplit[0] != 00) {
+	if (timesplit[0] != '00') {
 		$("#getTotalTimeNP").text(timesplit[0] + " hours " + timesplit[1] + " minutes " + timesplit[2] + " seconds");
 	}
 	else {
